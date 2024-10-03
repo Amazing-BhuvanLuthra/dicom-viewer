@@ -10,3 +10,5 @@ To run this code create a main project directory and inside it create a sub dire
 Create a virtual enviornment and activate it.
 install all the dependencies using the following command:-
 pip install Flask pydicom Pillow numpy opencv-python
+
+
