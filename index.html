@@ -3,19 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DICOM Conversion Result</title>
+    <title>Upload DICOM</title>
 </head>
 <body>
-    <h1>Converted Image</h1>
-    <img src="/converted_image.png" alt="Converted Image">
-    
-    <h2>Metadata</h2>
-    <ul>
-        {% for key, value in metadata.items() %}
-            <li><strong>{{ key }}:</strong> {{ value }}</li>
-        {% endfor %}
-    </ul>
-
-    <a href="/">Upload another DICOM file</a>
+    <h1>Upload DICOM File</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="dicom_file" accept=".dcm" required>
+        <button type="submit">Upload</button>
+    </form>
 </body>
 </html>
