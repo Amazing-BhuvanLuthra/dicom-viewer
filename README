@@ -1,0 +1,12 @@
+To run this code create a main project directory and inside it create a sub directory called templates and put all html files in it and create another file app.py in the main directory.
+
+/your_project_directory
+│
+├── app.py
+└── templates
+    ├── index.html
+    └── result.html
+
+Create a virtual enviornment and activate it.
+install all the dependencies using the following command:-
+pip install Flask pydicom Pillow numpy opencv-python
